@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       name: TimePrintStep
-      run: echo 'The time was ${{steps.timeprint.outputs.time}}
+      run: echo 'The time was ${{steps.timeprint.outputs.time}}.'
