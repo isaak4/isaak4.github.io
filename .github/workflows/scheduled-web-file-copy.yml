@@ -10,5 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       name: TimePrintStep
-      id: timeprint
       run: echo 'The time was ${{steps.timeprint.outputs.time}}
