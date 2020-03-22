@@ -1,0 +1,14 @@
+name: Daily copy of a web file in a repository
+# This workflow is triggered on pushes to the repository daily at 07:00
+on:
+        schedule:
+                - cron: '0 7 * * *'
+
+jobs:
+        timeprint:
+                name: TimePrintJob
+                runs-on: ubuntu-latest
+                steps:
+                        - name: TimePrintStep
+                          id: timeprint
+                          run: echp 'The time was ${{steps.timeprint.outputs.time}}
